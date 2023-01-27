@@ -2,37 +2,68 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header .window-container {
+  color: #000000;
+  font-family: "SF UI Display";
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header .window-container .window-controls {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+}
+
+.App-header .window-container .window-controls .closeButton {
+  background: #ff0000;
+  border-radius: 100px;
+  border: 2px solid #8c1313;
+  width: 15px;
+  height: 15px;
+}
+
+.App-header .window-container .maximizeButton {
+  background: #00ff00;
+  border-radius: 100px;
+  border: 2px solid #138c23;
+  width: 15px;
+  height: 15px;
+}
+
+.App-header .window-container .minimizeButton {
+  background: #ffea00;
+  border-radius: 100px;
+  border: 2px solid #8c7c13;
+  width: 15px;
+  height: 15px;
+}
+
+.App-header .window-container .window-controls-and-title {
+  display: flex;
+  background: linear-gradient(#d7d7d7 0%, #b3b4b6 100%);
+  height: 40px;
+}
+
+.App-header .window-container .window-title {
+  display: flex;
+  height: 19px;
+  font-size: medium;
+  margin: 0;
+  align-self: center;
+}
+
+.App-header .window-container .container {
+  border: 2px solid #b3b4b6;
+  background: #fff;
 }
